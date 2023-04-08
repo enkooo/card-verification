@@ -42,6 +42,8 @@ const input = document.querySelector('#card-number');
 
 btn.addEventListener('click', () => {
 	const cardNumber = input.value;
+	if (cardNumber.length === 0) return;
+
 	const result = document.querySelector('.result');
 	const { isValid, cardProvider } = checkCardNumber(cardNumber);
 
