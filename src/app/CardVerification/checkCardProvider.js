@@ -22,5 +22,5 @@ export const checkCardProvider = (cardNumber) => {
 		return cardProvider.name;
 	}
 
-	return null;
+	return 'unknown';
 };
